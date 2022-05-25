@@ -5,6 +5,7 @@ import { TodoList } from './components/TodoList';
 
 function App() {
   const [todos, setTodos] = useState<Array<Todo>>([]);
+  
 
   const toggleComplete: ToggleComplete = selectedTodo => {
     const updatedTodos = todos.map(todo => {
